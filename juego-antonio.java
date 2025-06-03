@@ -31,3 +31,8 @@ public class Juego {
         // Solicitud del nombre del jugador
         System.out.print("\nNecesito saber tu nombre, valiente cazador de pingüinos mutantes: ");
         nombre = sc.nextLine();
+
+        System.out.println("\n🧊 Encantado, " + nombre + "! Empiezas tu aventura con 50 puntos de vida.");
+        System.out.println("💨 Estás avanzando hacia el SUR, el lugar más frío y peligroso, ten cuidado por favor!.");
+        System.out.print("🎣 ¡Tienes esto a tu favor! Pescados mágicos: ");
+        pin.dibujoPescado(pin.pescado);
