@@ -27,3 +27,7 @@ public class Juego {
         System.out.println("*   Lucha, corre o... lanza pescado. Sí, como lo oyes.   *");
         System.out.println("*                                                        *");
         System.out.println("**********************************************************");
+
+        // Solicitud del nombre del jugador
+        System.out.print("\nNecesito saber tu nombre, valiente cazador de pingüinos mutantes: ");
+        nombre = sc.nextLine();
