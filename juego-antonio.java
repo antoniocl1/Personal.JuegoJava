@@ -36,3 +36,13 @@ public class Juego {
         System.out.println("💨 Estás avanzando hacia el SUR, el lugar más frío y peligroso, ten cuidado por favor!.");
         System.out.print("🎣 ¡Tienes esto a tu favor! Pescados mágicos: ");
         pin.dibujoPescado(pin.pescado);
+
+        // Bucle principal del juego: continúa hasta ganar o perder
+        while (explorador.puntos_de_vida > 0 && pin.pin_muertos < 5) {
+            String direccion = "S";
+            System.out.println("\n❓ Encrucijada del destino: ¿A dónde quieres ir?");
+            System.out.println("➡️ " + explorador.elegirCamino(explorador.camino));
+            direccion = sc.nextLine().toUpperCase();
+
+            boolean caminoValido = explorador.Camino(direccion);
+            explorador.camino = direccion;
