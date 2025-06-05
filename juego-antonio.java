@@ -88,3 +88,18 @@ public class Juego {
                 // Aplicar las consecuencias del combate o huida
                 explorador = Puntos(explorador.decision, tamanoPinguino, explorador);
 
+                // Mostrar el estado actual del jugador
+                System.out.println("\n❤️ Vida restante: " + explorador.puntos_de_vida);
+                System.out.println("🧊 Pingüinos derrotados: " + pin.pin_muertos + "/5");
+                sc.nextLine(); // Esperar Enter para continuar
+            }
+
+            // Comprobación de condiciones de fin de juego
+            if (pin.pin_muertos == 5) {
+                pin.mostrarVictoria();
+            } else if (explorador.puntos_de_vida <= 0) {
+                pin.mostrarDerrota();
+            }
+        }
+    }
+
