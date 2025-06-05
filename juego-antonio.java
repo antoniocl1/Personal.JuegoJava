@@ -75,3 +75,13 @@ public class Juego {
                         sc.nextLine(); // Limpiar el buffer
                     }
 
+                    // Validación si no quedan pescados
+                    if (explorador.decision == 2 && pin.pescado == 0) {
+                        while (explorador.decision != 1) {
+                            System.out.println("😅 Lo siento, no te queda pescado. ¡A pelear toca!");
+                            System.out.println("1️⃣ Luchar como un campeón");
+                            explorador.decision = sc.nextInt();
+                        }
+                    }
+                } while (explorador.decision == 0);
+
