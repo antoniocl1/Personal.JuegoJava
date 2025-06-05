@@ -143,4 +143,14 @@ public class Juego {
         return explorador;
     }
 
+    /**
+     * Simular un dado de 6 caras.
+     *
+     * @return Número aleatorio entre 1 y 6.
+     */
+    public static int Dado() {
+        return (int)(Math.random() * 6) + 1;
+    }
+}
+
 
