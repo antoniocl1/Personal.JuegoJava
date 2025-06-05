@@ -133,4 +133,14 @@ public class Juego {
                 pin.pin_muertos++;
                 System.out.println("🎉 ¡Victoria! Has ganado " + num_aleatorio + (num_aleatorio == 1 ? " punto" : " puntos") + " de vida.");
 
+            } else {
+                explorador.puntos_de_vida -= num_aleatorio;
+                System.out.println("😵 ¡Derrota! El Pingüino " + pin.mostrarTamanyo(pinguino) +
+                                   " te ha ganado y te ha quitado " + num_aleatorio + (num_aleatorio == 1 ? " punto" : " puntos") + ".");
+            }
+        }
+
+        return explorador;
+    }
+
 
