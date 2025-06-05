@@ -46,3 +46,32 @@ public class Juego {
 
             boolean caminoValido = explorador.Camino(direccion);
             explorador.camino = direccion;
+
+             if (caminoValido) {
+                int tamanoPinguino = pin.Tamanyo();
+
+                System.out.println("\n🚨 ¡ALERTA DE CRIATURA! Un pingüino mutante ha aparecido...");
+                pin.mostrarTamanyoPinguino(tamanoPinguino);
+
+                do {
+                    try {
+                        if (pin.pescado > 0) {
+                            System.out.print("\n🎣 Te quedan estos pescaditos para huir: ");
+                            pin.dibujoPescado(pin.pescadoCantidad(explorador.decision));
+                            System.out.println();
+                        }
+
+                        System.out.println("\n🔥 ¿Cuál será tu jugada maestra?");
+                        System.out.println("1️⃣ Luchar como un campeón");
+                        if (pin.pescado > 0) {
+                            System.out.println("2️⃣ Lanzar pescado y salir corriendo");
+                        }
+
+                        explorador.decision = sc.nextInt();
+
+                    } catch (InputMismatchException ex) {
+                        System.out.println("⛔ ¡Error! Eso no es un número válido. Intenta de nuevo (1 o 2).");
+                        explorador.decision = 0;
+                        sc.nextLine(); // Limpiar el buffer
+                    }
+
