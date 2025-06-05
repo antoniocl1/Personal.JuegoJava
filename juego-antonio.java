@@ -128,4 +128,9 @@ public class Juego {
             int dado = Dado();
             System.out.println("🎲 Has lanzado el dado... ¡Resultado: " + dado + "!");
 
+            if (pinguino < dado) {
+                explorador.puntos_de_vida += num_aleatorio;
+                pin.pin_muertos++;
+                System.out.println("🎉 ¡Victoria! Has ganado " + num_aleatorio + (num_aleatorio == 1 ? " punto" : " puntos") + " de vida.");
+
 
