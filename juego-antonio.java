@@ -121,3 +121,7 @@ public class Juego {
             default -> 0;
         };
 
+        if (decision == 2 && pin.pescado != 0) {
+            explorador.puntos_de_vida -= 1;
+            System.out.println("💨 ¡Has lanzado un pescado y has huido como un campeón!");
+
