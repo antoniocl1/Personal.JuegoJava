@@ -85,3 +85,6 @@ public class Juego {
                     }
                 } while (explorador.decision == 0);
 
+                // Aplicar las consecuencias del combate o huida
+                explorador = Puntos(explorador.decision, tamanoPinguino, explorador);
+
