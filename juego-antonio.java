@@ -103,3 +103,21 @@ public class Juego {
         }
     }
 
+    /**
+     * Método que calcula los puntos de vida ganados o perdidos según la decisión del jugador.
+     *
+     * @param decision   Opción elegida por el jugador: 1 (luchar) o 2 (huir).
+     * @param pinguino   Tamaño del pingüino (1 a 5).
+     * @param explorador Objeto que representa al jugador.
+     * @return Objeto Jugador actualizado.
+     */
+    public static Jugador Puntos(int decision, int pinguino, Jugador explorador) {
+        int num_aleatorio = switch (pinguino) {
+            case 1 -> 1 + (int)(Math.random() * 10);
+            case 2 -> 10 + (int)(Math.random() * 11);
+            case 3 -> 20 + (int)(Math.random() * 11);
+            case 4 -> 30 + (int)(Math.random() * 11);
+            case 5 -> 40 + (int)(Math.random() * 11);
+            default -> 0;
+        };
+
