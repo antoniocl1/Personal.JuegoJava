@@ -65,10 +65,12 @@ javac Main.java Juego.java Jugador.java Pinguino.java
 # 3. Ejecuta el programa con:
 java Main
 ```
+
 ---
 
 🧪 Ejemplo de Ejecución
 
+```java
 Tamaño aleatorio: L  
 PINGUINO L  
          __  
@@ -102,7 +104,8 @@ PINGUINO XL
       ^^--^^  
 
 ¿Quieres luchar (1) o huir (2)? → 1  
-¡Has perdido! El juego ha terminado.  
+¡Has perdido! El juego ha terminado.
+```
 
 ---
 
