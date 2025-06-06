@@ -46,3 +46,11 @@ Todos los archivos `.java` deben estar en el mismo directorio.
 7. Si gana o huye exitosamente, continúa el juego.
 
 ---
+
+## 💻 Requisitos
+
+- Java Development Kit (JDK) https://www.oracle.com/java/technologies/downloads/
+- Consola de comandos o terminal
+- Editor de texto para ver/editar el código fuente (opcional)
+
+---
