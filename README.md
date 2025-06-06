@@ -49,7 +49,7 @@ Todos los archivos `.java` deben estar en el mismo directorio.
 
 ## 💻 Requisitos
 
-- Java Development Kit (JDK) https://www.oracle.com/java/technologies/downloads/
+- [Java Development Kit (JDK)](https://www.oracle.com/java/technologies/downloads/)
 - Consola de comandos o terminal
 - Editor de texto para ver/editar el código fuente (opcional)
 
