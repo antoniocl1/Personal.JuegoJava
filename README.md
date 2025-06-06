@@ -17,3 +17,15 @@ El proyecto está compuesto por las siguientes clases:
 Todos los archivos `.java` deben estar en el mismo directorio.
 
 ---
+
+## 🎮 Funcionamiento del juego
+
+- En cada ronda aparecerá un pingüino de forma aleatoria.
+- Se te perguntará si quieres: **luchar (1)** o **huir (2)**.
+- Si decides huir, se consumirá **1 pescado**. Empiezarás con **3**.
+- No puedes huir si no tienes pescado.
+- No puedes retroceder por el mismo camino del que vienes.
+- Si luchas y pierdes, el juego termina.
+- Si ganas todos los enfrentamientos, ¡has ganado!
+
+---
