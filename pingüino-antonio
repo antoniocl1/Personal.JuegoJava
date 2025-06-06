@@ -1,0 +1,7 @@
+public class Pinguino {
+
+    // Atributo que almacena el número total de pingüinos derrotados por el jugador
+    int pin_muertos = 0;
+
+    // Cantidad de pescados que posee el jugador
+    int pescado = 3;
