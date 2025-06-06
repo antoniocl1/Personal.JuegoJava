@@ -54,3 +54,64 @@ Todos los archivos `.java` deben estar en el mismo directorio.
 - Editor de texto para ver/editar el código fuente (opcional)
 
 ---
+## ⚙️ Instrucciones de Compilación y Ejecución
+
+```bash
+# 1. Abre la terminal en la carpeta donde están los archivos .java
+
+# 2. Compila los archivos con:
+javac Main.java Juego.java Jugador.java Pinguino.java
+
+# 3. Ejecuta el programa con:
+java Main
+```
+---
+
+🧪 Ejemplo de Ejecución
+
+Tamaño aleatorio: L  
+PINGUINO L  
+         __  
+       <(o )___  
+        (    )  
+        (    )  
+        (    )  
+        ^^--^^  
+
+¿Quieres luchar (1) o huir (2)? → 2  
+¡Has huido! Te quedan 2 pescados.  
+
+Tamaño aleatorio: XS  
+PINGUINO XS  
+       __  
+     <(o )___  
+      ^^--^^  
+
+¿Quieres luchar (1) o huir (2)? → 1  
+¡Has ganado el combate!  
+
+Tamaño aleatorio: XL  
+PINGUINO XL  
+       __  
+     <(o )___  
+      (    )  
+      (    )  
+      (    )  
+      (    )  
+      (    )  
+      ^^--^^  
+
+¿Quieres luchar (1) o huir (2)? → 1  
+¡Has perdido! El juego ha terminado.  
+
+---
+
+🧠 Decisiones de Diseño  
+- **División en clases:** he separado la lógica en varias clases (`Juego`, `Jugador`, `Pinguino`) para tener un diseño limpio y facilitar futura edición del código.  
+- **Tamaños visuales:** los pingüinos se ven diferentes según su tamaño, considero que añade un toque divertido al juego.  
+- **Dirección y lógica de huida:** evito que el jugador pueda huir dos veces por la misma dirección, lo que añade dificultad estratégica.  
+- **Aleatoriedad:** tanto los tamaños de los pingüinos como los resultados de combate son aleatorios, haciendo cada partida distinta.  
+- **Gestión de recursos:** el jugador debe usar cuidadosamente sus pescados, ya que son limitados y se gastan al huir.  
+
+👨‍💻 **Autor**  
+Proyecto desarrollado por [antoniocl1](https://www.linkedin.com/in/antonio-jes%C3%BAs-cort%C3%A9s-l%C3%B3pez-502189348/) como ejercicio práctico de programación Java en consola, reforzando conceptos de orientación a objetos, estructuras de control y diseño por clases.
