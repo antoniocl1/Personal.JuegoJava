@@ -42,3 +42,17 @@ public class Pinguino {
         }
         System.out.println(); // Salto de línea tras imprimir los pescados
     }
+
+    /**
+     * Muestra un mensaje visual de victoria con arte ASCII.
+     */
+    public void mostrarVictoria() {
+        System.out.println("*****************************************************************");
+        System.out.println("  _   _                                         _       _ ");
+        System.out.println(" | | | | __ _ ___    __ _  __ _ _ __   __ _  __| | ___ | |");
+        System.out.println(" | |_| |/ _` / __|  / _` |/ _` | '_ \\ / _` |/ _` |/ _ \\| |");
+        System.out.println(" |  _  | (_| \\__ \\ | (_| | (_| | | | | (_| | (_| | (_) |_|");
+        System.out.println(" |_| |_|\\__,_|___/  \\__, |\\__,_|_| |_|\\__,_|\\__,_|\\___/(_)");
+        System.out.println("                    |___/                                 ");
+        System.out.println("*****************************************************************");
+    }
