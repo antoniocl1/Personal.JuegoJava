@@ -56,3 +56,31 @@ public class Pinguino {
         System.out.println("                    |___/                                 ");
         System.out.println("*****************************************************************");
     }
+
+    /**
+     * Asocia un número entero a un tamaño textual de pingüino.
+     *
+     * @param tamanyo_pin Valor entre 1 y 5 que representa el tamaño.
+     * @return Tamaño del pingüino como cadena (XS, S, M, L, XL).
+     */
+    public String mostrarTamanyo(int tamanyo_pin) {
+        String tamanyo = " ";
+        switch (tamanyo_pin) {
+            case 1:
+                tamanyo = "XS";
+                break;
+            case 2:
+                tamanyo = "S";
+                break;
+            case 3:
+                tamanyo = "M";
+                break;
+            case 4:
+                tamanyo = "L";
+                break;
+            case 5:
+                tamanyo = "XL";
+                break;
+        }
+        return tamanyo;
+    }
