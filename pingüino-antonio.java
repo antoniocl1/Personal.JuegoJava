@@ -15,3 +15,16 @@ public class Pinguino {
         int ping_aleatorio = (int) (Math.random() * 5 + 1);
         return ping_aleatorio;
     }
+
+    /**
+     * Reduce la cantidad de pescado si el jugador decide huir (opción 2).
+     *
+     * @param decision Valor que indica la decisión del jugador (1 = luchar, 2 = huir).
+     * @return Cantidad actualizada de pescados tras la acción.
+     */
+    public int pescadoCantidad(int decision) {
+        if (decision == 2) {
+            pescado = pescado - 1;
+        }
+        return pescado;
+    }
