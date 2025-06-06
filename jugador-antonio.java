@@ -47,3 +47,29 @@ public class Jugador {
             return true;
         }
     }
+
+    /**
+     * Muestra las direcciones disponibles según el camino actual.
+     *
+     * @param nuevo_camino Dirección actual del jugador.
+     * @return Cadena con las opciones disponibles.
+     */
+    public String elegirCamino(String nuevo_camino) {
+        String direccion = " ";
+        switch (nuevo_camino) {
+            case "N":
+                direccion = "🌍 Opciones: N = norte, E = este, O = oeste";
+                break;
+            case "S":
+                direccion = "🌍 Opciones: S = sur, E = este, O = oeste";
+                break;
+            case "E":
+                direccion = "🌍 Opciones: N = norte, S = sur, E = este";
+                break;
+            case "O":
+                direccion = "🌍 Opciones: N = norte, S = sur, O = oeste";
+                break;
+        }
+        return direccion;
+    }
+}
