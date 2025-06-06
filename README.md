@@ -29,3 +29,20 @@ Todos los archivos `.java` deben estar en el mismo directorio.
 - Si ganas todos los enfrentamientos, ¡has ganado!
 
 ---
+
+## 🧠 Lógica del Juego
+
+1. Se genera un pingüino aleatorio (tamaños XS, S, M, L, XL).
+2. El jugador ve el dibujo ASCII correspondiente.
+3. El jugador elige entre:
+   - **1 - Luchar**
+   - **2 - Huir**
+4. Si elige huir:
+   - Se revisa si tiene pescado.
+   - Se reduce el pescado y se avanza.
+5. Si elige luchar:
+   - Se determina aleatoriamente si gana o pierde (puedes modificar la lógica según dificultad).
+6. Si pierde, fin del juego.
+7. Si gana o huye exitosamente, continúa el juego.
+
+---
