@@ -22,3 +22,11 @@ public class Jugador {
         }
         return resultado;
     }
+
+    /**
+     * Comprueba si el jugador intenta retroceder, lo cual no está permitido.
+     * No se puede volver por el mismo camino desde el que se vino.
+     *
+     * @param nuevo_camino Dirección introducida por el jugador.
+     * @return false si intenta volver atrás; true en caso contrario.
+     */
