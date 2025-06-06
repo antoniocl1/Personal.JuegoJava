@@ -30,3 +30,20 @@ public class Jugador {
      * @param nuevo_camino Dirección introducida por el jugador.
      * @return false si intenta volver atrás; true en caso contrario.
      */
+    public boolean Camino(String nuevo_camino) {
+        if (nuevo_camino.equals("N") && camino.equals("S")) {
+            System.out.println("❌ ¡No puedes volver atrás! Esa ruta está congelada.");
+            return false;
+        } else if (nuevo_camino.equals("E") && camino.equals("O")) {
+            System.out.println("❌ ¡No puedes volver atrás! El hielo ya se rompió por ahí.");
+            return false;
+        } else if (nuevo_camino.equals("O") && camino.equals("E")) {
+            System.out.println("❌ ¡No puedes volver atrás! Demasiado resbaladizo.");
+            return false;
+        } else if (nuevo_camino.equals("S") && camino.equals("N")) {
+            System.out.println("❌ ¡No puedes volver atrás! Ya quemaste esa etapa del mapa.");
+            return false;
+        } else {
+            return true;
+        }
+    }
