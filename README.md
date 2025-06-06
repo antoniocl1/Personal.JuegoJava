@@ -116,5 +116,7 @@ PINGUINO XL
 - **Aleatoriedad:** tanto los tamaños de los pingüinos como los resultados de combate son aleatorios, haciendo cada partida distinta.  
 - **Gestión de recursos:** el jugador debe usar cuidadosamente sus pescados, ya que son limitados y se gastan al huir.  
 
+---
+
 👨‍💻 **Autor**  
 Proyecto desarrollado por [antoniocl1](https://www.linkedin.com/in/antonio-jes%C3%BAs-cort%C3%A9s-l%C3%B3pez-502189348/) como ejercicio práctico de programación Java en consola, reforzando conceptos de orientación a objetos, estructuras de control y diseño por clases.
