@@ -28,3 +28,17 @@ public class Pinguino {
         }
         return pescado;
     }
+
+    /**
+     * Imprime en consola un dibujo de pescados según la cantidad restante.
+     *
+     * @param pescado Número de pescados a mostrar visualmente.
+     */
+    public void dibujoPescado(int pescado) {
+        int contador = 0;
+        while (contador != pescado) {
+            System.out.print(" ><_> ");
+            contador = contador + 1;
+        }
+        System.out.println(); // Salto de línea tras imprimir los pescados
+    }
